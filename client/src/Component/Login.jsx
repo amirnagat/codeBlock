@@ -18,7 +18,7 @@ const Signup = async ()=>{
         };
     
         try {
-          const res = await axios.post("http://localhost:8000/api/register", newUser);
+          const res = await axios.post("https://cute-tan-caiman-ring.cyclic.app/api/register", newUser);
           console.log(res);
         } catch (err) {
           console.log(err);
@@ -31,7 +31,7 @@ const submitLogin = async () => {
       password: passwordLogin.current.value,
     };
     try {
-        const res = await axios.post("http://localhost:8000/api/login", user)
+        const res = await axios.post("https://cute-tan-caiman-ring.cyclic.app/api/login", user)
       console.log(res.data);
       navigate(`/LobbyPage`)
   } catch (err) {
